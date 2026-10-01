@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isuru Udayanga – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f8;--panel:#fff;--ink:#14213d;--mute:#52607a;--line:#d9e0ea;--accent:#2f5bea;--pass:#17895e;--passbg:#e1f4ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--panel:#172033;--ink:#e8edf6;--mute:#9aa8c2;--line:#2a3550;--accent:#7d9cff;--pass:#4fd1a0;--passbg:#14342b}}
+:root[data-theme="dark"]{--bg:#0f1624;--panel:#172033;--ink:#e8edf6;--mute:#9aa8c2;--line:#2a3550;--accent:#7d9cff;--pass:#4fd1a0;--passbg:#14342b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",sans-serif;margin:0;line-height:1.1}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:22px 0;flex-wrap:wrap}
+nav a{color:var(--mute);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center;padding:36px 0 72px}
+.hero h1{font-size:clamp(44px,8vw,84px);font-weight:800;letter-spacing:-.03em}
+.hero p.lead{font-size:20px;color:var(--mute);max-width:34em;margin:22px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+.run{background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:22px;font-size:15px}
+.run h2{font-size:18px;margin-bottom:14px;display:flex;justify-content:space-between;gap:10px}
+.run h2 span{color:var(--pass);font-size:15px}
+.run ul{list-style:none;margin:0;padding:0}
+.run li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+.ok{background:var(--passbg);color:var(--pass);font-weight:500;border-radius:6px;padding:0 9px;font-size:13px;white-space:nowrap;align-self:center}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:34px;margin-bottom:28px;letter-spacing:-.02em}
+.about{max-width:40em}
+.projects{display:grid;gap:18px}
+.proj{background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:26px}
+.proj h3{font-size:23px;margin-bottom:10px}
+.proj p{margin:0 0 14px;color:var(--mute)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{font-size:14px;border:1px solid var(--line);border-radius:6px;padding:2px 10px}
+.row{display:grid;grid-template-columns:150px 1fr;gap:8px 24px;padding:16px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row b{font-weight:500;color:var(--mute)}
+.row h3{font-size:20px;margin-bottom:4px}
+.row p{margin:0;color:var(--mute)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{background:var(--panel);border:1.5px solid var(--line);border-radius:10px;padding:8px 16px}
+footer{padding:48px 0 64px;border-top:1px solid var(--line)}
+footer h2{font-size:34px;margin-bottom:14px}
+footer p{color:var(--mute);margin:0 0 22px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:36px}.row{grid-template-columns:1fr}nav{justify-content:flex-start}}
+@media(prefers-reduced-motion:no-preference){.run li{animation:in .5s ease both}.run li:nth-child(2){animation-delay:.15s}.run li:nth-child(3){animation-delay:.3s}.run li:nth-child(4){animation-delay:.45s}.run li:nth-child(5){animation-delay:.6s}@keyframes in{from{opacity:0;transform:translateX(10px)}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Isuru Udayanga</h1>
+<p class="lead">Final-year IT undergraduate from Okkampitiya, Sri Lanka. I build web applications with Java and Python, and I like checking that they work the way users expect.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="mailto:iudayanga244@gmail.com">Email me</a></div>
+</div>
+<aside class="run" aria-label="Quick summary">
+<h2>What I bring <span>5 of 5</span></h2>
+<ul>
+<li>Full-stack web projects<span class="ok">Built</span></li>
+<li>Database management<span class="ok">Ready</span></li>
+<li>Accuracy from 10 months of data entry<span class="ok">Proven</span></li>
+<li>Prompt engineering<span class="ok">Ready</span></li>
+<li>Learning QA and testing<span class="ok">Eager</span></li>
+</ul>
+</aside>
+</header>
+</div>
+
+<section id="about"><div class="wrap"><h2>About me</h2>
+<p class="about">I am a 23-year-old HNDIT student at SLIATE Badulla with hands-on experience in web and mobile application development and database management. I am organized, responsible and a quick learner, and I enjoy planning tasks, working with teams and solving problems. I am looking for an IT role where I can apply my technical skills, gain industry experience and grow.</p></div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+<div class="projects">
+<article class="proj"><h3>Smart Inventory Management System</h3>
+<p>A full-stack inventory and stock management system. A Java (JSP/Servlet) web application works together with a Python Flask AI microservice that provides predictive analytics.</p>
+<ul class="tags"><li>Java JSP/Servlet</li><li>Python Flask</li><li>MySQL</li><li>Bootstrap</li><li>Apache Tomcat</li></ul></article>
+<article class="proj"><h3>ATI Badulla Web Portal</h3>
+<p>A web portal for the Advanced Technological Institute, Badulla, giving students and staff access to institute information and admin tools: a homepage, exam announcements, a live visitor counter, a course catalog (HNDIT, HNDE, HNDA) and a secure admin login.</p>
+<ul class="tags"><li>Java</li><li>JSP</li><li>NetBeans</li><li>Apache Tomcat</li></ul></article>
+<article class="proj"><h3>Lumiere Gem</h3>
+<p>A full-stack web application for gemstones and jewelry. Visitors explore gemstones, choose designs they like and generate personalized jewelry concepts with AI, through a responsive frontend, backend and database.</p>
+<ul class="tags"><li>Full-stack</li><li>AI design generation</li><li>Responsive UI</li><li>Database</li></ul></article>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><h2>Work experience</h2>
+<div class="row"><b>10 months</b><div><h3>Data Entry Operator</h3><p>DAG Apparel, Monaragala. Built strong accuracy, attention to detail and the habit of working to deadlines.</p></div></div>
+</div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2>
+<div class="row"><b>2024 – 2026</b><div><h3>Higher National Diploma in IT (HNDIT)</h3><p>SLIATE Badulla</p></div></div>
+<div class="row"><b>2022 (sat 2023)</b><div><h3>G.C.E. Advanced Level</h3></div></div>
+<div class="row"><b>2019</b><div><h3>G.C.E. Ordinary Level</h3></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2>
+<ul class="skills"><li>Web development</li><li>Prompt engineering</li><li>Database management</li><li>Project planning and coordination</li><li>Client and team communication</li><li>Time management</li><li>Critical thinking</li><li>Sinhala</li><li>English</li></ul>
+</div></section>
+
+<footer id="contact"><div class="wrap"><h2>Get in touch</h2>
+<p>I am open to internships and entry-level IT roles.</p>
+<div class="btns"><a class="btn main" href="mailto:iudayanga244@gmail.com">iudayanga244@gmail.com</a><a class="btn" href="https://github.com/Isuruudayanga0" rel="noopener">GitHub</a></div>
+</div></footer>
+</body>
+</html>
